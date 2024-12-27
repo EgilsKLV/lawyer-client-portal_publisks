@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Client Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lawyer Client Portal</h1>
+    </header>
+    <nav>
+        <a href="#landing">Home</a>
+        <a href="#consultation">Consultation</a>
+        <a href="#about">About Us</a>
+        <a href="#reviews">Review Lawyers</a>
+        <a href="#articles">Articles</a>
+    </nav>
+    
+    <section id="landing">
+        <h2>Welcome to Lawyer Client Portal</h2>
+        <p>Find professional legal help, get consultations, and manage your legal needs all in one place.</p>
+        <a href="#consultation" class="btn">Book a Consultation</a>
+    </section>
+
+    <section id="consultation">
+        <h2>Consultation Calls</h2>
+        <p>Schedule online consultations with our qualified lawyers. Choose the right lawyer for your needs.</p>
+        <form>
+            <label for="lawyer">Select Lawyer:</label>
+            <select id="lawyer" name="lawyer">
+                <option value="lawyer1">Lawyer 1</option>
+                <option value="lawyer2">Lawyer 2</option>
+                <option value="lawyer3">Lawyer 3</option>
+            </select><br><br>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" name="time"><br><br>
+
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our platform connects clients with experienced lawyers to help with various legal issues. We ensure top-quality service and transparency in all interactions.</p>
+    </section>
+
+    <section id="reviews">
+        <h2>Review Lawyers</h2>
+        <p>Rate your lawyer and share your experience:</p>
+        <form>
+            <label for="lawyer-review">Select Lawyer:</label>
+            <select id="lawyer-review" name="lawyer-review">
+                <option value="lawyer1">Lawyer 1</option>
+                <option value="lawyer2">Lawyer 2</option>
+                <option value="lawyer3">Lawyer 3</option>
+            </select><br><br>
+
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5"><br><br>
+
+            <label for="review">Your Review:</label><br>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </section>
+
+    <section id="articles">
+        <h2>Articles</h2>
+        <p>Stay informed with our latest articles on legal topics and tips.</p>
+        <ul>
+            <li><a href="#">Article 1: Legal Tips for Beginners</a></li>
+            <li><a href="#">Article 2: Understanding Contracts</a></li>
+            <li><a href="#">Article 3: Preparing for Court</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lawyer Client Portal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
